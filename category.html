@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category</title>
+    <link rel="icon" href="images/ع.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+<!-- start header -->
+<header>
+<div class="top-header d-flex align-items-center py-2">
+    <div class="container">
+        <div class="row">
+      <div class="col-6  col-md-4">
+        <a href="">
+            <img src="images/log).png" alt="logo" width="50px">
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <input type="text" class="form-control" placeholder="اكتب اسم الكتاب للبحث عنه">
+      </div>
+
+      <div class="col-md-4  left-header d-flex align-items-center d-none d-lg-flex ">
+        <a  data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample">
+            <span>السلة</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+         <a  data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+            <span>الدخول</span>
+            <i class="fa-solid fa-user"></i>
+        </>
+        <a href="">
+            <span>المفضلة</span>
+            <i class="fa-solid fa-heart"></i>
+        </a>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div class="buttom-header">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div>
+       <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+       <button class="navbar-toggler menu-icon" type="button"  data-bs-toggle="offcanvas" href="#login">
+            <i class="fa-solid fa-user"></i>
+    </button>
+    </div>
+
+
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="store.">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category.html">روايات وقصص</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category.html">تطوير الذات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category.html">دينية وإسلامية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category.html">علمية وثقافية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category.html">تعليمية ومناهج</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category.html">طب وصحة</a>
+        </li>
+       
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+</header>
+<!-- end header -->
+
+
+
+<!-- start bunner -->
+<section class="bunner">
+    <h1 class="category-title">قسم الكتب</h1>
+</section>
+
+
+<div class="container mt-5">
+        <button class="navbar-toggler menu-icon d-sm-none" type="button" data-bs-toggle="offcanvas" href="#filter">
+            <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+      
+    <div class="row">
+        <div class="col-md-3 d-none d-md-block">
+           <div class="filter-section sticky-lg-top">
+             <h4 class="filter-title">فلترة بالبحث</h4>
+             <input type="text" class="form-control" placeholder="اكتب اسم الكتاب للبحث عنه">
+             <select name="" id="" class="form-select mt-3">
+                <option value="">مبادئ النجاح</option>
+                <option value="">السماح بالرحيل</option>
+                <option value="">العادات الذرية</option>
+                <option value="">قوة عقلك الباطن</option>
+                <option value="">هكذا تتعافى</option>
+                <option value="">أحببت وغداً</option>
+             </select>
+             <hr>
+          <h4 class="filter-title">فلترة بالتصنيف</h4>
+             <div class="filter-radio d-flex flex-column gap-1">
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">مبادئ النجاح</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">السماح بالرحيل</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">العادات الذرية</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">قوة عقلك الباطن</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">هكذا تتعافى</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">أحببت وغداً</label>
+                </div>
+               
+             </div>
+          <h4 class="filter-title mt-3">فلترة باسم الكاتب</h4>
+             <div class="filter-radio d-flex flex-column gap-1">
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">جاك كانفيلد</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">ديفيد ر.هاوكينز</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">جيميس كلير</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">جوزيف ميرفى</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">برياناويست</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">عماد رشاد عثمان</label>
+                </div>
+               
+             </div>
+
+
+
+
+
+
+
+           </div>
+        </div>
+        <div class="col-md-9">
+           <div class="row row-cols-2 row-cols-md-3">
+    <div class="col product mb-3 mb-3 book" >
+      <div class="card overflow-hidden">
+        <div class="quick-icons">
+          <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href=""><i class="fa-solid fa-code-compare"></i></a>
+        </div>
+  <img src="images/نجاحjpg.jpg" alt="product">
+  <div class="product-info">
+    <h3>مبادئ النجاح</h3>
+    <p>يقدم مبادئ لتحقيق الأهداف .</p>
+    <div class="starts mb-2">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div><div class="price mb-2">
+      <span> 20$ السعر</span>
+      <span>30$</span>
+    </div>
+    <button class="btn btn-danger bu bu w-100">إضافة الى السلة</button>
+  </div>
+</div>
+    </div>
+    <div class="col product mb-3 mb-3 bo" >
+      <div class="card overflow-hidden">
+        <div class="quick-icons">
+          <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href=""><i class="fa-solid fa-code-compare"></i></a>
+        </div>
+  <img src="images/الرحيل.jpg" alt="product">
+  <div class="product-info">
+    <h3>السماح بالرحيل</h3>
+    <p> للتحرر من القيود عبر تقنية التسليم.</p>
+    <div class="starts mb-2">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div><div class="price mb-2">
+      <span> 10$ السعر</span>
+      <span>20$</span>
+    </div>
+    <button class="btn btn-danger bu bu w-100">إضافة الى السلة</button>
+  </div>
+</div>
+    </div>
+    <div class="col product mb-3 bo" >
+      <div class="card overflow-hidden">
+        <div class="quick-icons">
+          <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href=""><i class="fa-solid fa-code-compare"></i></a>
+        </div>
+  <img src="images/ذرية.jpg" alt="product">
+  <div class="product-info">
+    <h3>العادات الذرية</h3>
+    <p>  يوضح كيف يمكن أن يحدث تغيير  في حياتك .</p>
+    <div class="starts mb-2">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div><div class="price mb-2">
+      <span> 30$ السعر</span>
+      <span>40$</span>
+    </div>
+    <button class="btn btn-danger bu bu w-100">إضافة الى السلة</button>
+  </div>
+</div>
+    </div>
+    <div class="col product mb-3 book" >
+      <div class="card overflow-hidden">
+        <div class="quick-icons">
+          <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href=""><i class="fa-solid fa-code-compare"></i></a>
+        </div>
+  <img src="images/عقلك.jpg" alt="product">
+  <div class="product-info">
+    <h3>قوة عقلك </h3>
+    <p>    يوضح كيف يستخدام الايمان لعقلك الباطن.</p>
+    <div class="starts mb-2">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div><div class="price mb-2">
+      <span> 40$ السعر</span>
+      <span>50$</span>
+    </div>
+    <button class="btn btn-danger bu bu w-100">إضافة الى السلة</button>
+  </div>
+</div>
+    </div>
+    <div class="col product mb-3 bo" >
+      <div class="card overflow-hidden">
+        <div class="quick-icons">
+          <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href=""><i class="fa-solid fa-code-compare"></i></a>
+        </div>
+  <img src="images/تتعافى.jpg" alt="product">
+  <div class="product-info">
+    <h3>هكذا تتعافى</h3>
+    <p>دليل علمي للشفاء النفس بعد التجارب الصعبة.</p>
+    <div class="starts mb-2">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div><div class="price mb-2">
+      <span> 50$ السعر</span>
+      <span>60$</span>
+    </div>
+    <button onclick="alert('تم إضافة الكتاب إلى السلة بنجاح')"   class="btn btn-danger bu bu w-100">إضافة الى السلة</button>
+  </div>
+</div>
+    </div>
+    <div class="col product mb-3 book" >
+      <div class="card overflow-hidden">
+        <div class="quick-icons">
+          <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href=""><i class="fa-solid fa-code-compare"></i></a>
+        </div>
+  <img src="images/أحببت.jpg" alt="product">
+  <div class="product-info">
+    <h3>أحببت وغداً</h3>
+    <p> يوضح رحلة التعافي من العلاقات السامة .</p>
+    <div class="starts mb-2">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div><div class="price mb-2">
+      <span> 60$ السعر</span>
+      <span>70$</span>
+    </div>
+    <button class="btn btn-danger bu w-100">إضافة الى السلة</button>
+  </div>
+</div>
+    </div>
+  </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end bunner -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- start quick view  -->
+<div class="modal fade" id="quick-product" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">هكذا تتعافى</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <img class="img-fluid" src="images/تتعافى.jpg"  alt="هكذا تتعافى">
+            <button class="btn btn-primary pu pu bu bu w-100 mt-1">كافة التفاصيل</button>
+          </div>
+          <div class="col">
+            <img  width="50%" class="mt-3"   src="images/photo_20-removebg-preview.png" alt="" >
+            <h1 class="modal-title fs-5 my-3" >هكذا تتعافى</h1>
+            <p class="product-decription">
+دليل عملي في التنمية الذاتية والصحة النفسية، يقدم استراتيجيات للتعافي من التجارب الصعبة،يعتبر الكتاب مزيجًا بين علم النفس والتجارب الواقعية.</p>
+            <div class="quick-reviews d-flex mb-3 ">
+              <span>تقييمات المستخدمين:</span>
+              <div class="starts mb-2 d-flex">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    </div>
+     <div class="price mb-3">
+      <span> 60$ السعر</span>
+      <span>70$</span>
+    </div>
+
+    <div class="btns d-flex gap-2">
+
+     <div class="btn-group btns-quantity">
+  <button type="button" class="btn ">+</button>
+  <button type="button" class="btn ">1</button>
+  <button type="button" class="btn ">-</button>
+</div>
+
+      <div class="d-flex gap-1 add-btn">
+        <button class="btn btn-danger bu">إضافة إلى السلة</button>
+        <button class="btn btn-success">شراء الان</button>
+      </div>
+      </div>
+      <hr>
+
+
+      <div class="gategory mb-3">
+        <span>التصنيفات:</span>
+        <a href="">الأكثر قراءة</a>
+      </div>
+
+    <div class="share">
+      <span>المشاركة:</span>
+      <div class="share-icons d-inline-flex gap-2">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </div>
+    </div>
+  
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary pu" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end quick view  -->
+
+<!-- cart -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="cart">سلة المشتريات</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="row row-cols-1 row-mini-card m-1">
+
+      <div class="col mini-card d-flex justify-content-between align-items-center">
+        <img class="img-fluid w-25"  src="images/اسرار.jpg" alt="">
+        <p>اسرار النجاح</p>
+        <div class="btn-group btns-quantity-mini">
+   <button type="button" class="btn ">+</button>
+   <button type="button" class="btn ">1</button>
+   <button type="button" class="btn ">-</button>
+  </div>
+      </div>
+       <div class="col mini-card d-flex justify-content-between align-items-center">
+        <img class="img-fluid w-25"  src="images/انجح.jpg" alt="">
+        <p>انجح من أجل نفسك</p>
+        <div class="btn-group btns-quantity-mini">
+   <button type="button" class="btn ">+</button>
+   <button type="button" class="btn ">1</button>
+   <button type="button" class="btn ">-</button>
+  </div>
+      </div>
+       <div class="col mini-card d-flex justify-content-between align-items-center">
+        <img class="img-fluid w-25"  src="images/عقلك.jpg" alt="">
+        <p>قوة عقلك الباطن</p>
+        <div class="btn-group btns-quantity-mini">
+   <button type="button" class="btn ">+</button>
+   <button type="button" class="btn ">1</button>
+   <button type="button" class="btn ">-</button>
+  </div>
+      </div>
+       <div class="col mini-card d-flex justify-content-between align-items-center">
+        <img class="img-fluid w-25"  src="images/ابواك.jpg" alt="" >
+        <p class="text-center fs-6">الكتاب الذي تتمنى لو قرأه أبواك</p>
+        <div class="btn-group btns-quantity-mini">
+   <button type="button" class="btn ">+</button>
+   <button type="button" class="btn ">1</button>
+   <button type="button" class="btn ">-</button>
+  </div>
+      </div>
+      </div>
+      <div class="d-flex flex-column gap-3">
+        <p class="alert alert-danger  p-3  my-3 text-center ">مجموع المنتجات 148$ فقط لا غير </p>
+        <button class="btn btn-primary pu w-100">عرض السلة</button>
+        <button class="btn btn-danger bu w-100">إتمام الطلب</button>
+      </div>
+
+      
+    </div>
+    </div>
+  </div>
+</div>
+<!-- end cart -->
+
+<!-- filter -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="filter" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="cart">الفلترة</h5>
+    <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   
+        <div class="filter-section sticky-lg-top">
+             <h4 class="filter-title">فلترة بالبحث</h4>
+             <input type="text" class="form-control" placeholder="اكتب اسم الكتاب للبحث عنه">
+             <select name="" id="" class="form-select mt-3">
+                <option value="">مبادئ النجاح</option>
+                <option value="">السماح بالرحيل</option>
+                <option value="">العادات الذرية</option>
+                <option value="">قوة عقلك الباطن</option>
+                <option value="">هكذا تتعافى</option>
+                <option value="">أحببت وغداً</option>
+             </select>
+             <hr>
+          <h4 class="filter-title">فلترة بالتصنيف</h4>
+             <div class="filter-radio d-flex flex-column gap-1">
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">مبادئ النجاح</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">السماح بالرحيل</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">العادات الذرية</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">قوة عقلك الباطن</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">هكذا تتعافى</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">أحببت وغداً</label>
+                </div>
+               
+             </div>
+          <h4 class="filter-title mt-3">فلترة باسم الكاتب</h4>
+             <div class="filter-radio d-flex flex-column gap-1">
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">جاك كانفيلد</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">ديفيد ر.هاوكينز</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">جيميس كلير</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">جوزيف ميرفى</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">برياناويست</label>
+                </div>
+                <div>
+                    <input name="category" type="radio" class="form-check-input">
+                    <label for="" class="form-label">عماد رشاد عثمان</label>
+                </div>
+               
+             </div>
+
+
+
+
+
+
+
+           </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- end filter-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- login -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="login">تسجيل الدخول</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="mini-login">
+      <form>
+  <div class="mb-3">
+    <label for="email1" class="form-label">اسم المستخدم أو البريد الالكتروني</label>
+    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="password1" class="form-label">كلمة المرور</label>
+    <input type="password" class="form-control" id="password1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">تذكر بياناتي</label>
+  </div>
+  <button type="submit" class="btn btn-primary pu w-100">تسجيل الدخول</button>
+</form>
+  <div class="alert alert-danger  my-3 text-center"> 
+    <a href="">انقر هنا في حال نسيت كلمة المرور</a>
+  </div>
+  <hr>
+
+  <div class="text-center mt-5" >
+    <i class="fa-regular fa-user fa-3x"></i>
+    <p> ليس لديك حساب؟ </p>
+    <a href="" class="btn btn-danger bu w-100 text-white">إنشاء حساب جديد</a>
+
+  </div>
+
+    </div>
+  </div>
+</div>
+<!-- end login -->
+ 
+ 
+  <!-- start footer -->
+  <footer>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col f1 mb-3">
+          <img src="images/log).png" alt="logo" class="w-50">
+          <p class="text-white">متجرنا يهتم في أفضل أنواع الكتب ويختص بالجودة العالية ونسعى إلى توفير كل جديد وكل ما يرضى العملاء .</p>
+          <ul class="navbar-nav text-white">
+            <li><i class="fa-solid fa-location-dot"></i>حماة-سوريا</li>
+            <li><i class="fa-solid fa-phone"></i>0965432678</li>
+            <li><i class="fa-solid fa-envelope"></i>batoul881@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="col f2 mb-3">
+          <h3>أهم الروابط</h3>
+          <ul class="navbar-nav ">
+            <li> <a href="">الرئيسية</a></li>
+            <li> <a href="">من نحن؟</a></li>
+            <li> <a href="">اتصل بنا</a></li>
+            <li> <a href="">راسلنا</a></li>
+      
+          </ul>
+        </div>
+        <div class="col f3 mb-3">
+          <h3>التصنيفات</h3>
+          <ul class="navbar-nav">
+            <li><a href="">القصص والروايات</a></li>
+            <li><a href="">الدينية</a></li>
+            <li><a href="">تطوير ذات</a></li>
+            <li><a href="">علمية</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col f4 mb-3">
+          <h3>النشرة البريدية</h3>
+          <p>مساحتك الهادئة للقراءة تبدأ  من هنا اشترك ليصلك كل جديد</p>
+          <form action="">
+            <input type="text" placeholder="الرجاء ادخال البريد" class="form-control mb-3">
+          </form>
+          <button class="btn btn-danger pu w-100" >اشتراك</button>
+        </div>
+
+
+
+
+
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 mt-3">
+        <div class="col">
+          <img src="images/payments.png" alt="">
+          
+        </div>
+        <div class="col d-flex justify-content-end">
+          <p class="text-white text-center"> جميع الحقوق محفوظة &copy; 2026 لمتجر الكتب</p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </footer>
+<!-- end foter -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="bootstrap.js"></script>
+    <script src="store.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
