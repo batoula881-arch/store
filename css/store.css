@@ -435,6 +435,6 @@ footer {
      }
 
   } */
-/* .swiper {
-    overflow-x: hidden;
-} */
+section {
+    overflow-x: hidden !important;
+}
